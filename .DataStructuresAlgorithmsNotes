@@ -1,0 +1,49 @@
+Big O Notation -
+    Wiki Definition
+    Big O Notation is a mathematical notation that describes the limiting behavior of a function when the argument tends towards a particular value or infinity. 
+O(n) 
+    Describe the performance of an algorithm - certain data structures can be more or less costly than others depending on the functionality
+
+Example - Accessing an Array's index is very fast but rewriting and changing an array is costly to resize the array.
+
+Linked List - Grow and shrink with ease but accessing an index is slow 
+
+O(1) - Constant Time
+Single operation and takes constant amount of time to run 
+
+O(n)
+Size of input - size grows linearly 
+
+Methods can have multiple lines each with their own complexity
+Psuedocode Example
+    Runtime Complexity of Method
+// 0(1 + n + 1)
+We drop constants
+So 0(n)
+The cost of the algorithm increases linearly so we can simplify this by dropping this constant
+----The Cost of This Algorithm increases linearly and in direct proportion to the size of our input -
+     5 items in the input = 5 operations
+     1 million = 1 million operations
+
+O(n^2) Quadratic
+    1 to 1 Nested loop
+    while
+        while
+        OR
+    for
+        for
+3 Loops =
+O(n^3) 
+
+Logarithmic 
+-Binary Search - start in middle item of array 
+
+Exponential Growth
+O(2n) - Very slow ... Opposite of Logarithmic
+
+
+line = 'hello'
+print(line)  // 0(1) Constant
+while i < 4; i++; // 0(n)
+    print(i);
+print(line) // 0(1)
