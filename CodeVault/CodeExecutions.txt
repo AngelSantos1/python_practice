@@ -1,0 +1,31 @@
+
+~DECLARE VARIABLE~
+4 Ways to Declare a JavaScript Variable:
+    Using var (OLDER 1995-2015)
+    Using let (Variable Can Change)
+    Using const (Variable Cannot Change)
+    Using nothing
+
+
+
+~FOR LOOP~
+
+JS For Loop
+for (let i = 0; i < cars.length; i++) {
+  text += cars[i] + "<br>";
+} 
+
+for (expression 1; expression 2; expression 3) {
+  // code block to be executed
+}
+
+Python 
+fruits = ["apple", "banana", "cherry"]
+for beginning in fruits:
+  print(x)
+
+for x in "banana":
+  print(x)
+
+listOfFruits = ["apple", "banana", "cherry"]
+x = len(listOfFruits)

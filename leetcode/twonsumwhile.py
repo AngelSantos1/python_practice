@@ -5,14 +5,14 @@ i = 0
 j = 0
 
 while i < len(nums) - 1:
-    #while j < len(nums):        
-        #i = i + 1   
-        #j = 0
-       
-    if nums[i] + nums[i+1] == target:
+    while j < len(nums):        
+        if nums[i] + nums[i+1] == target:
             print(nums[i],nums[i+1]) 
-    #j = i + 1  
-    i = i + 1
+        if j == len(nums):
+            i = i + 1
+    j = j + 1
+#j = i + 1  
+    
 
 
 """while i < len(nums) - 1:

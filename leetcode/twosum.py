@@ -5,17 +5,21 @@
 def twoSumNaive(num_arr, pair_sum):
  
     # search first element in the array
+    # First loop -- O(n)
         for i in range(len(num_arr)-1):
             # search other element in the array
+            # Second loop -- O(n)
             for j in range( i+1,len(num_arr)):
-            # if these two elemets sum to pair_sum, print the pair                
-                """if num_arr[i] + num_arr[j] != pair_sum:
-                    print("Not found!")"""
-                if num_arr[i] + num_arr[j] == pair_sum:
+            # if these two elemets sum to pair_sum, print the pair 
+                target = pair_sum == num_arr[i] + num_arr[j]                   
+                if target:
+                    #return num_arr, pair_sum
                     print("Pair with sum", pair_sum,"is: (", num_arr[i],",",num_arr[j],")")
+            #Total - O(n**2)
                     
                     
-                    
+            """if num_arr[i] + num_arr[j] != pair_sum:
+                    print("Not found!")"""
             #Leetcode Version
             """for i in range(len(nums)-1):
                 for j in range(i+1,len(nums)):
@@ -47,3 +51,4 @@ pair_sum = 7
 
 # Function call inside print
 twoSumNaive(num_arr, pair_sum) 
+

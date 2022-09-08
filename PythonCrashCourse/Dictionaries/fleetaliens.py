@@ -10,7 +10,7 @@ for alien_number in range(30):
         new_alien1 = {'color':}"""
     
 #Make first 3 aliens yellow, medium speed aliens worth 10 points
-for alien in aliens[0:3]:
+for alien in aliens[:3]:
     if alien['color'] == 'green':
         alien['color'] = 'yellow'
         alien['speed'] = 'medium'
@@ -21,7 +21,7 @@ for alien in aliens[0:3]:
         alien['points'] = 15
     
 #Show the first 5 aliens.
-for alien in aliens[:8]:
+for alien in aliens[:5]:
     print(alien)
 print("...")
 
