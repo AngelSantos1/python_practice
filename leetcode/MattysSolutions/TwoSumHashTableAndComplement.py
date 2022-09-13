@@ -9,5 +9,3 @@ def twoSum(nums, target):
         check[target - nums[i]] = i
 
 print(twoSum(nums, target))
-
-  
